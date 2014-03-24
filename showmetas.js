@@ -1,4 +1,4 @@
-function($){
+(function($){
 	$._sm_findButNotInside = function(selector) {
 		return $(document)._sm_findButNotInside(selector)
 	}
@@ -24,4 +24,4 @@ function($){
   	})
   	console.log(item)
   })
-}(jQuery)
+})(jQuery)
