@@ -1,1 +1,269 @@
-<a href="javascript:var body = document.getElementsByTagName('body')[0];if ( body ){if ( typeof jQuery == 'undefined' ){script = document.createElement('script');script.type = 'text/javascript';script.src  = 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';body.appendChild(script);}var script = document.getElementById('meta-show-script');if ( script ){body.removeChild(script);}script = document.createElement('script');script.type = 'text/javascript';script.src  = 'http://weapp.github.io/showmetas/showmetas.js?' + Math.ceil(9999999 * Math.random());script.id   = 'meta-show-script';body.appendChild(script);}void(0);">Bookmarklet</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShowMetas</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1 class="page-header">ShowMetas <small>Reveal Meta & Semantic Information</small></h1>
+
+      <div class="text-center">
+        <a class="btn btn-default" href="javascript:var body = document.getElementsByTagName('body')[0];if ( body ){if ( typeof jQuery == 'undefined' ){script = document.createElement('script');script.type = 'text/javascript';script.src  = 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js';body.appendChild(script);}var script = document.getElementById('meta-show-script');if ( script ){body.removeChild(script);}script = document.createElement('script');script.type = 'text/javascript';script.src  = 'http://weapp.github.io/showmetas/showmetas.js?' + Math.ceil(9999999 * Math.random());script.id   = 'meta-show-script';body.appendChild(script);}void(0);">Drag this bookmarklet to your bookmarks bar</a>
+      </div>
+
+
+
+      <h2 class="page-header">Contents for test purposes</h2>
+
+      <h3>TVSerie</h3>
+
+      <div itemscope itemtype="http://schema.org/TVSeries">
+        <a itemprop="url" href="http://www.bbc.co.uk/programmes/b006q2x0">
+         <span itemprop="name">Doctor Who</span></a>,
+        <div itemprop="season" itemscope itemtype="http://schema.org/TVSeason">
+          <a itemprop="url" href="http://www.bbc.co.uk/programmes/b00rs69w">
+           <span itemprop="name">Series 5</span></a>,
+          <div itemprop="episode" itemscope itemtype="http://schema.org/TVEpisode">
+            <a itemprop="url" href="http://www.bbc.co.uk/programmes/b00sj9sq">
+             <span itemprop="name">The Hungry Earth</span></a>,
+            episode <span itemprop="position">8</span>, broadcast on
+            <div itemprop="publication" itemscope itemtype="http://schema.org/BroadcastEvent">
+              <div itemprop="publishedOn" itemscope itemtype="http://schema.org/BroadcastService">
+                <a itemprop="url" href="http://www.bbc.co.uk/bbcone"><span itemprop="name">BBC One</span></a>
+              </div> at
+              <span itemprop="startDate"
+                content="2010-05-22T18:15:00+01:00">18:15, 22nd of May 2010</span>
+            </div>,
+            available on
+            <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+              <a itemprop="url" href="http://www.bbc.co.uk/iplayer/episode/b00sj9sq">BBC iPlayer</a>
+            </div> from
+            <div itemprop="publication" itemscope itemtype="http://schema.org/OnDemandEvent">
+              <span itemprop="startDate"
+               content="2012-06-02T19:45:00+01:00">19:45 on the 2nd of June</span> until the
+              <span itemprop="endDate" content="2012-06-09T19:44:00+01:00">9th</span>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Book</h3>
+
+
+      <div itemscope itemtype="http://schema.org/Book">
+
+      <img itemprop="image" src="catcher-in-the-rye-book-cover.jpg" />
+      <span itemprop="name">The Catcher in the Rye</span> -
+       <link itemprop="bookFormat" href="http://schema.org/Paperback">Mass Market Paperback
+      by <a itemprop="author" href="/author/jd_salinger.html">J.D. Salinger</a>
+
+      <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <span itemprop="ratingValue">4</span> stars -
+        <span itemprop="reviewCount">3077</span> reviews
+      </div>
+
+      <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        Price: <span itemprop="price">$6.99</span>
+        <meta itemprop="priceCurrency" content="USD" />
+        <link itemprop="availability" href="http://schema.org/InStock">In Stock
+      </div>
+
+      Product details
+      <span itemprop="numberOfPages">224</span> pages
+      Publisher: <span itemprop="publisher">Little, Brown, and Company</span> -
+       <meta itemprop="datePublished" content="1991-05-01">May 1, 1991
+      Language: <span itemprop="inLanguage">English</span>
+      ISBN-10: <span itemprop="isbn">0316769487</span>
+
+      Reviews:
+
+      <div itemprop="review" itemscope itemtype="http://schema.org/Review">
+        <span itemprop="reviewRating">5</span> stars -
+        <b>"<span itemprop="name">A masterpiece of literature</span>" </b>
+        by <span itemprop="author">John Doe</span>,
+        Written on <meta itemprop="datePublished" content="2006-05-04">May 4, 2006
+        <span itemprop="reviewBody">I really enjoyed this book. It captures the essential
+        challenge people face as they try make sense of their lives and grow to adulthood.</span>
+      </div>
+
+      <div itemprop="review" itemscope itemtype="http://schema.org/Review">
+        <span itemprop="reviewRating">4</span> stars -
+        <b>"<span itemprop="name">A good read.</span>" </b>
+        by <span itemprop="author">Bob Smith</span>,
+        Written on <meta itemprop="datePublished" content="2006-06-15">June 15, 2006
+        <span itemprop="reviewBody">Catcher in the Rye is a fun book. It's a good book to read.</span>
+      </div>
+
+      </div>
+
+
+      <h3>Another Book</h3>
+
+      <div itemscope="" itemtype="http://schema.org/Book">
+         <meta itemprop="bookFormat" content="EBook/DAISY3"/>
+         <meta itemprop="accessibilityFeature" content="largePrint/CSSEnabled"/>
+         <meta itemprop="accessibilityFeature" content="highContrast/CSSEnabled"/>
+         <meta itemprop="accessibilityFeature" content="resizeText/CSSEnabled"/>
+         <meta itemprop="accessibilityFeature" content="displayTransformability"/>
+         <meta itemprop="accessibilityFeature" content="longDescription"/>
+         <meta itemprop="accessibilityFeature" content="alternativeText"/>
+         <meta itemprop="accessibilityControl" content="fullKeyboardControl"/>
+         <meta itemprop="accessibilityControl" content="fullMouseControl"/>
+         <meta itemprop="accessibilityHazard" content="noFlashing"/>
+         <meta itemprop="accessibilityHazard" content="noMotionSimulation"/>
+         <meta itemprop="accessibilityHazard" content="noSound"/>
+         <meta itemprop="accessibilityAPI" content="ARIA"/>
+
+         <dl>
+            <dt>Name:</dt>
+            <dd itemprop="name">Holt Physical Science</dd>
+            <dt>Brief Synopsis:</dt>
+            <dd itemprop="description">NIMAC-sourced textbook</dd>
+            <dt>Long Synopsis:</dt>
+            <dd>N/A</dd>
+            <dt>Book Quality:</dt>
+            <dd>Publisher Quality</dd>
+            <dt>Book Size:</dt>
+            <dd itemprop="numberOfPages">598 Pages</dd>
+            <dt>ISBN-13:</dt>
+            <dd itemprop="isbn">9780030426599</dd>
+            <dt>Publisher:</dt>
+            <dd itemprop="publisher" itemtype="http://schema.org/Organization" itemscope="">Holt, Rinehart and Winston</dd>
+            <dt>Date of Addition:</dt>
+            <dd>06/08/10</dd>
+            <dt>Copyright Date:</dt>
+            <dd itemprop="copyrightYear">2007</dd>
+            <dt>Copyrighted By:</dt>
+            <dd itemprop="copyrightHolder" itemtype="http://schema.org/Organization" itemscope="">Holt, Rinehart and Winston</dd>
+            <dt>Adult content:</dt>
+            <dd><meta itemprop="isFamilyFriendly" content="true"/>No</dd>
+            <dt>Language:</dt>
+            <dd><meta itemprop="inLanguage" content="en-US"/>English US</dd>
+            <dt>Essential Images:</dt>
+            <dd>861</dd>
+            <dt>Described Images:</dt>
+            <dd>910</dd>
+            <dt>Categories:</dt>
+            <dd><span itemprop="genre">Educational Materials</span></dd>
+            <dt>Grade Levels:</dt>
+            <dd>Sixth grade, Seventh grade, Eighth grade</dd>
+            <dt>Submitted By:</dt>
+            <dd>Bookshare Staff</dd>
+            <dt>NIMAC:</dt>
+            <dd>This book is currently only available to public K-12 schools and organizations in the
+            United States for use with students with an IEP, because it was created from files
+            supplied by the NIMAC under these restrictions. Learn more in the NIMAC Support Center.</dd>
+         </dl>
+
+         <div class="bookReviews" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+            <strong>Reviews of Holt Physical Science (<span itemprop="reviewCount">0</span> reviews)</strong>
+
+            <div class="bookReviewScore">
+               <span><span itemprop="ratingValue">0</span> - No Rating Yet</span>
+            </div>
+         </div>
+      </div>
+
+
+      <h3>Event</h3>
+
+      <div itemscope itemtype="http://schema.org/Event">
+        <a itemprop="url" href="nba-miami-philidelphia-game3.html">
+        NBA Eastern Conference First Round Playoff Tickets:
+        <span itemprop="name"> Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) </span>
+        </a>
+
+        <meta itemprop="startDate" content="2016-04-21T20:00">
+          Thu, 04/21/16
+          8:00 p.m.
+
+        <div itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <a itemprop="url" href="wells-fargo-center.html">
+          Wells Fargo Center
+          </a>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Philadelphia</span>,
+            <span itemprop="addressRegion">PA</span>
+          </div>
+        </div>
+
+        <div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+          Priced from: <span itemprop="lowPrice">$35</span>
+          <span itemprop="offerCount">1938</span> tickets left
+        </div>
+      </div>
+
+      <h3>Product</h3>
+
+      <div itemscope itemtype="http://schema.org/Product">
+        <span itemprop="name">Kenmore White 17" Microwave</span>
+        <img src="kenmore-microwave-17in.jpg" alt='Kenmore 17" Microwave' />
+        <div itemprop="aggregateRating"
+          itemscope itemtype="http://schema.org/AggregateRating">
+         Rated <span itemprop="ratingValue">3.5</span>/5
+         based on <span itemprop="reviewCount">11</span> customer reviews
+        </div>
+
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <span itemprop="price">$55.00</span>
+          <link itemprop="availability" href="http://schema.org/InStock" />In stock
+        </div>
+
+        Product description:
+        <span itemprop="description">0.7 cubic feet countertop microwave.
+        Has six preset cooking categories and convenience features like
+        Add-A-Minute and Child Lock.</span>
+
+        Customer reviews:
+
+        <div itemprop="review" itemscope itemtype="http://schema.org/Review">
+          <span itemprop="name">Not a happy camper</span> -
+          by <span itemprop="author">Ellie</span>,
+          <meta itemprop="datePublished" content="2011-04-01">April 1, 2011
+          <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            <meta itemprop="worstRating" content = "1">
+            <span itemprop="ratingValue">1</span>/
+            <span itemprop="bestRating">5</span>stars
+          </div>
+          <span itemprop="description">The lamp burned out and now I have to replace
+          it. </span>
+        </div>
+
+        <div itemprop="review" itemscope itemtype="http://schema.org/Review">
+          <span itemprop="name">Value purchase</span> -
+          by <span itemprop="author">Lucas</span>,
+          <meta itemprop="datePublished" content="2011-03-25">March 25, 2011
+          <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            <meta itemprop="worstRating" content = "1"/>
+            <span itemprop="ratingValue">4</span>/
+            <span itemprop="bestRating">5</span>stars
+          </div>
+          <span itemprop="description">Great microwave for the price. It is small and
+          fits in my apartment.</span>
+        </div>
+        ...
+      </div>
+
+
+    </div>
+  
+
+
+
+  </body>
+</html>
