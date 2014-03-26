@@ -139,6 +139,6 @@
     showmetas_tag.append(div)
   })
 
-  $(body).first().prepend(showmetas_tag)
+  $('body').eq(0).prepend(showmetas_tag)
 
 })(jQuery)
